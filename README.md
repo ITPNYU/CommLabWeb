@@ -34,7 +34,7 @@ Comm Lab Web Syllabus Fall 2012# []() Week 1: Hello, Sinatra
 1. Tags
 
 
-1. `<html>, <title>, <body>, <em>, <strong>, <h1-h5>, <a>, <img>, <ol>, <ul>, <p>'
+1. `<html>, <title>, <body>, <em>, <strong>, <h1-h5>, <a>, <img>, <ol>, <ul>, <p>`
 2. Introduce <form> and <input> types
 
 
