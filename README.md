@@ -1,4 +1,5 @@
-Comm Lab Web Syllabus Fall 2012# []() Week 1: Hello, Sinatra
+# Comm Lab Web Syllabus Fall 2012# []() 
+## Week 1: Hello, Sinatra
 ### []() Readings For This Week
 
 1. [Intro to Sinatra](https://docs.google.com/document/pub?id=1Qvi_Lh0geVa6P2LZlxFWi52yezLFnnZi9T5OEJpyidk)  (up to “Hello Worlds: What is a route?)
