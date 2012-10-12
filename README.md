@@ -1,102 +1,78 @@
-# Comm Lab Web Syllabus Fall 2012# []() 
+# Comm Lab Web Syllabus Fall 2012
 ## Week 1: Hello, Sinatra
-### []() Readings For This Week
+###  Readings For This Week
 
-1. [Intro to Sinatra](https://docs.google.com/document/pub?id=1Qvi_Lh0geVa6P2LZlxFWi52yezLFnnZi9T5OEJpyidk)  (up to “Hello Worlds: What is a route?)
-2. [Is HTML a programming language?](http://www.cs.tut.fi/~jkorpela/prog.html) 
+* [Intro to Sinatra](https://docs.google.com/document/pub?id=1Qvi_Lh0geVa6P2LZlxFWi52yezLFnnZi9T5OEJpyidk)  (up to “Hello Worlds: What is a route?)
+* [Is HTML a programming language?](http://www.cs.tut.fi/~jkorpela/prog.html) 
 
-### []() Introduction
+### Introduction
 
-1. Introductions
-2. Introduction and[ software](https://docs.google.com/document/d/1urC5jHRnkdJS79E_3Z6048yo8K_z6x1JKDBGeN8Eowc/edit)  we’ll use in this class
-3. Map of interaction: User to Client, over Network, to Server, to Datastore, and back.
-4. Web / HTTP
+* Introduction and [software](https://docs.google.com/document/d/1urC5jHRnkdJS79E_3Z6048yo8K_z6x1JKDBGeN8Eowc/edit)  we’ll use in this class
+* Map of interaction: User to Client, over Network, to Server, to Datastore, and back.
+* Web / HTTP
+    * Basics of client/server/datastore interaction
+    * Using the web to allow access to remote resources, to respond to multiple clients, to apply conditional logic, to persist data, to accumulate data.
+. HTTP Requests
+. Examples of clients
 
+### HTML
 
-1. Basics of client/server/datastore interaction
-2. Using the web to allow access to remote resources, to respond to multiple clients, to apply conditional logic, to persist data, to accumulate data.
+* Intro to HTML
+    * Tags that open and close
+    * Mark up content
+    * Nested tags
 
+* Tags
+    * `<html>, <title>, <body>, <em>, <strong>, <h1-h5>, <a>, <img>, <ol>, <ul>, <p>`
+    * Introduce `<form>` and `<input>` types
+        * [Simple Form Example](https://gist.github.com/3557042) 
+        * [All Fields Form Example](https://gist.github.com/3557043) 
 
-1. HTTP Requests
-
-
-1. Examples of clients
-
-### []() HTML
-
-1. Intro to HTML
-
-
-1. Tags that open and close
-2. Mark up content
-3. Nested tags
-
-
-1. Tags
-
-
-1. `<html>, <title>, <body>, <em>, <strong>, <h1-h5>, <a>, <img>, <ol>, <ul>, <p>`
-2. Introduce <form> and <input> types
-
-
-1. [Simple Form Example](https://gist.github.com/3557042) 
-2. [All Fields Form Example](https://gist.github.com/3557043) 
-
-### []() Dynamic HTML with Sinatra and HTML form
+### Dynamic HTML with Sinatra and HTML form
 
 1. Your Sinatra folder
 2. Simple Sinatra script
 3. [Simple HTML form example with POST to Sinatra route](https://gist.github.com/3557046) 
 
-### []() Homework For Next Week
+### Homework For Next Week
 
-1. Open up the simple_form.html document on your server in Komodo and add more input fields (and input types). Chang thee app.rb file so it outputs the fields in a way that you like.
+Open up the simple_form.html document on your server in Komodo and add more input fields (and input types). Chang thee app.rb file so it outputs the fields in a way that you like.
 
-# []() Week 2: Basics of a Sinatra script
-### []() Readings For This Week
+## Week 2: Basics of a Sinatra script
+### Readings For This Week
 
-1. Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
+Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
 
-### []() Review
+### Review
 
-1. HTML basics
-2. Class Homework
+* HTML basics
+* Class Homework
 
-### []() [Sinatra](http://goo.gl/ZLGyk) 
+### [Sinatra](http://goo.gl/ZLGyk) 
 
-1. Ruby
+* Ruby
+    * General (no types, etc)
+    * Syntax
+    * Variables
+    * Functions
+    * Loops
+    * Gems
+* [Basic Sinatra App](https://gist.github.com/3557045) 
+* [Routes](https://gist.github.com/3557050) 
+* [Returning something](https://gist.github.com/3557052) 
+* [Params](https://gist.github.com/3557054) 
+    * GET request in URL params
+    * POST request
+* Conditional programming
+    * [First route gets picked up](https://gist.github.com/3557059) 
+    * [Route conditionals](https://gist.github.com/3557061) 
 
+### HTML Forms
 
-1. General (no types, etc)
-2. Syntax
-3. Variables
-4. Functions
-5. Loops
-6. Gems
+* Render HTML with Sinatra
+* Send to route in Sinatra
 
-
-1. [Basic Sinatra App](https://gist.github.com/3557045) 
-2. [Routes](https://gist.github.com/3557050) 
-3. [Returning something](https://gist.github.com/3557052) 
-4. [Params](https://gist.github.com/3557054) 
-
-
-1. GET request in URL params
-2. POST request
-
-
-1. Conditional programming
-
-
-1. [First route gets picked up](https://gist.github.com/3557059) 
-2. [Route conditionals](https://gist.github.com/3557061) 
-
-### []() HTML Forms
-
-1. Render HTML with Sinatra
-2. Send to route in Sinatra
-
-### []() Setting up a Sinatra app on the ITP server
+### Setting up a Sinatra app on the ITP server
 
 1. Open Terminal (Putty for Windows)
 2. run `ssh[netid](mailto:netid@stu.itp.nyu.edu) [@stu.itp.nyu.edu](mailto:netid@stu.itp.nyu.edu) `. Remember to put in your netid instead of “netid”
@@ -104,9 +80,9 @@
 4. run `ruby new_sinatra_app.rbnameofapp`. Remember to replace “nameofapp” with the name of your application.
 5. Go to your blank Sinatra app here (using your netid and the name of your app):[http://itp.nyu.edu/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [~](http://itp.nyu.edu/~netID/sinatra/nameofapp) [netID](http://itp.nyu.edu/~netID/sinatra/nameofapp) [/sinatra/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [nameofapp](http://itp.nyu.edu/~netID/sinatra/nameofapp) 
 
-### []() Homework For Next Week
+##% Homework For Next Week
 
-1. Create a new Sinatra application on the ITP Server. Create a GET “/form” route that returns an HTML form with a few different input types. Create a POST “/form” route that reads these parameters and sends back a dynamic HTML page. This HTML page should at least have an image that changes depending on the input from the form.
+Create a new Sinatra application on the ITP Server. Create a GET “/form” route that returns an HTML form with a few different input types. Create a POST “/form” route that reads these parameters and sends back a dynamic HTML page. This HTML page should at least have an image that changes depending on the input from the form.
 
 # []() Week 3: Basics of Datamapper
 ### []() Readings For This Week
