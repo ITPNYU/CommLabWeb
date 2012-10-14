@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settings</title>
+  </head>
+
+  <body>
+    <form action="/settings" method="POST">
+      <fieldset>
+        <legend>Settings</legend>
+        <ul>
+          <li>
+            <label for="email">Your email</label>
+            <input id="email" type="email" name="settings[email]" size="50" placeholder="awesomesauce@example.com" />
+          </li>
+          <li>
+            <input id="spam" checked="checked" type="checkbox" value="1" name="settings[spam]"/>
+            <label for="spam">Send me spam.</label>
+          </li>
+        </ul>
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
