@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Spam App</title>
+  </head>
+
+  <body>
+    <form action="/settings" method="POST">
+      <fieldset>
+        <legend>Profile Settings</legend>
+        <ul>
+          <li>
+            <label for="full-name">Your name</label>
+            <input id="full-name" type="text" name="settings[full_name]" />
+          </li>
+          <li>
+            <!-- Some browsers automatically validate HTML5 input types, such as "email" -->
+            <label for="email">Your email</label>
+            <input id="email" type="email" name="settings[email]" />
+          </li>
+          <li>
+            <input id="gender-male" type="radio" name="settings[gender]" value="male" />
+            <label for="gender-male">Male</label>
+            <input id="gender-female" type="radio" name="settings[gender]" value="female" />
+            <label for="gender-female">Female</label>
+            <input id="gender-na" type="radio" name="settings[gender]" value="na" />
+            <label for="gender-na">Not telling</label>
+          </li>
+          <li>
+            <label for="party">Political Party</label>
+            <select id="party" name="settings[party]">
+              <option value></option>
+              <option value="democrat">Democrat</option>
+              <option value="republican">Republican</option>
+              <option value="independent">Independent</option>
+            </select>
+          </li>
+          <li>
+            <!-- Placeholders give a visual hint to the user -->
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="settings[bio]" placeholder="Tell us your life story"></textarea>
+          </li>
+          <li>
+            <!-- Checkboxes are for true/false responses -->
+            <input id="contact-spam" type="checkbox" value="1" name="settings[spam_contacts]"/>
+            <label for="contact-spam">Send invites to all my contacts</label>
+          </li>
+          <li>
+            <!-- Set checkbox or radio default to be selected with the "checked" attribute -->
+            <input id="personal-spam" type="checkbox" checked="checked" value="1" name="settings[personal_spam]"/>
+            <label for="personal-spam">Send me spam based on my personal details</label>
+          </li>
+          <li>
+            <input id="third-party-spam" type="checkbox" checked="checked" disabled="disabled" value="1" name="settings[third_party_spam]"/>
+            <label for="third-party-spam">Sell my information to the highest bidder</label>
+          </li>
+          <li>
+            <!-- Disable inputs with the "disabled" attribute -->
+            <label for="current-password">Current password</label>
+            <input id="current-password" type="password" name="settings[current_password]" />
+          </li>
+        </ul>
+        <input type="submit" value="Update Profile" />
+      </fieldset>
+    </form>
+  </body>
+</html>
