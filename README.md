@@ -14,8 +14,8 @@
 * Web / HTTP
     * Basics of client/server/datastore interaction
     * Using the web to allow access to remote resources, to respond to multiple clients, to apply conditional logic, to persist data, to accumulate data.
-. HTTP Requests
-. Examples of clients
+* HTTP Requests
+* Examples of clients
 
 ### HTML
 
@@ -27,14 +27,13 @@
 * Tags
     * `<html>, <title>, <body>, <em>, <strong>, <h1-h5>, <a>, <img>, <ol>, <ul>, <p>`
     * Introduce `<form>` and `<input>` types
-        * [Simple Form Example](https://gist.github.com/3557042) 
-        * [All Fields Form Example](https://gist.github.com/3557043) 
+        * [Form Example](https://github.com/ITPNYU/CommLabWeb/blob/master/examples/basic_form.html) 
 
 ### Dynamic HTML with Sinatra and HTML form
 
-1. Your Sinatra folder
-2. Simple Sinatra script
-3. [Simple HTML form example with POST to Sinatra route](https://gist.github.com/3557046) 
+* Your Sinatra folder
+* Simple Sinatra script
+* [Simple HTML form example with POST to Sinatra route](https://gist.github.com/3557046) 
 
 ### Homework For Next Week
 
