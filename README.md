@@ -27,7 +27,7 @@
 * Tags
     * `<html>, <title>, <body>, <em>, <strong>, <h1-h5>, <a>, <img>, <ol>, <ul>, <p>`
     * Introduce `<form>` and `<input>` types
-        * [Form Example](https://github.com/ITPNYU/CommLabWeb/blob/master/examples/basic_form.html) 
+        * [Example with many form inputs](https://github.com/ITPNYU/CommLabWeb/blob/master/examples/basic_form.html) 
 
 ### Dynamic HTML with Sinatra and HTML form
 
