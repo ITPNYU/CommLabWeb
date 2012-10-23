@@ -2,11 +2,7 @@ require 'sinatra'
 
 # Main route  - this is the form where we take the input
 get '/' do
-  <<-HTML
-  This is an example of simple routes.
-  Check out the <a href='/~irs221/sinatra/simple_routes/first_route'>first route</a> or
-  the <a href='/~irs221/sinatra/simple_routes/second_route'>second route</a>
-  HTML
+  "This is an example of simple routes. Check out the <a href='/~irs221/sinatra/simple_routes/first_route'>first route</a> or the <a href='/~irs221/sinatra/simple_routes/second_route'>second route</a>"
 end
 
 # You can see this at http://itp.nyu.edu/~irs221/sinatra/simple_routes/first_route
