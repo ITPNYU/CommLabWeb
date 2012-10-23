@@ -59,15 +59,15 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
     * Functions
     * Loops
     * Gems
-* [Basic Sinatra App](https://gist.github.com/3557045) 
-* [Routes](https://gist.github.com/3557050) 
-* [Returning something](https://gist.github.com/3557052) 
-* [Params](https://gist.github.com/3557054) 
+* [Basic Sinatra App](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/basic_sinatra_app) 
+* [Routes](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/routes) 
+* [Returning something](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/returning_something) 
+* [Params](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/params) 
     * GET request in URL params
     * POST request
 * Conditional programming
-    * [First route gets picked up](https://gist.github.com/3557059) 
-    * [Route conditionals](https://gist.github.com/3557061) 
+    * [First route gets picked up](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/first_route) 
+    * [Route conditionals](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/route_conditionals) 
 
 ### HTML Forms
 
@@ -104,19 +104,19 @@ Create a new Sinatra application on the ITP Server. Create a GET “/form” rou
 * Setup Datamapper
 * Write your Datamapper class
     * Properties: Serial, Boolean, String, Text, Float, Integer, Datetime,
-* [Create](https://gist.github.com/3557063) 
-* [Read](https://gist.github.com/3758285) 
-* [Update](https://gist.github.com/3758294) 
-* [Delete](https://gist.github.com/3758300) 
-* [Find](https://gist.github.com/3758349) 
-* [Example with everything](https://gist.github.com/3557066) 
+* [Create](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/create) 
+* [Read](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/read) 
+* [Update](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/update) 
+* [Delete](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/delete) 
+* [Find](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/find) 
+* [Example with everything](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/everything) 
 
 ### Using Datamapper with Forms
 
 * Example of form + save
-* [Returning User Example](https://gist.github.com/3557074) 
-* [Advanced Returning User Example](https://gist.github.com/3557076) 
-* [Company Structure Example](https://gist.github.com/3557068) 
+* [Returning User Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/returning_user) 
+* [Advanced Returning User Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/advanced_returning_user) 
+* [Company Structure Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/company_structure) 
 
 ### Homework For Next Week
 
@@ -130,16 +130,16 @@ Sinatra Up and Running, p. 21-30
 
 ### ERB Views
 
-* [“views” folder](https://gist.github.com/3557073) 
+* [“views” folder](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/views) 
 
 ### Creating a Blog in Sinatra
 
-* [A full blog in Sinatra and Datamapper](https://gist.github.com/3797418) 
+* [A full blog in Sinatra and Datamapper](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/full_blog) 
 
 ### Advanced routes
 
 * :param in route
-*  [Route Conditions](https://gist.github.com/3557070) 
+*  [Route Conditions](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/route_conditions) 
 
 ### Homework For Next Week
 
@@ -158,14 +158,14 @@ What do you want to do? What is preventing you from doing it?
 
 ### Advanced Datamapper
 
-* [Birthday Registration Example](https://gist.github.com/3837833) 
+* [Birthday Registration Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week5/birthdays) 
 * More Datatypes
     * Serial
     * String
     * Boolean
     * Integer
     * DateTime
-    * [Example of all of these](https://gist.github.com/3557075) 
+    * [Example of all of these](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week5/datatypes) 
 * Datatype options
     * Required
     * Default
@@ -183,7 +183,7 @@ What do you want to do? What is preventing you from doing it?
 ### Homework For Next Week
 
 * Start developing your final project.
-* [Example of a big final project](https://gist.github.com/3557078) 
+* [Example of a big final project](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week5/final_project_example) 
 
 ## Week 6: More Clients and Project Help
 
