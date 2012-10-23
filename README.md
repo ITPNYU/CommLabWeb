@@ -61,13 +61,14 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
     * Gems
 * [Basic Sinatra App](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/basic_sinatra_app) 
 * [Routes](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/routes) 
-* [Returning something](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/returning_something) 
+* [Returning something](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/returning_something)
+* [Returning something with views](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/views)
 * [Params](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/params) 
     * GET request in URL params
     * POST request
-* Conditional programming
-    * [First route gets picked up](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/first_route) 
-    * [Route conditionals](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/route_conditionals) 
+    * Params in route
+* [First route gets picked up](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/first_route) 
+
 
 ### HTML Forms
 
@@ -128,18 +129,15 @@ Write a sinatra app that shows a user form, and on the POST request recognize wh
 
 Sinatra Up and Running, p. 21-30
 
-### ERB Views
-
-* [“views” folder](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/views) 
-
 ### Creating a Blog in Sinatra
 
 * [A full blog in Sinatra and Datamapper](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/full_blog) 
 
 ### Advanced routes
 
-* :param in route
-*  [Route Conditions](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/route_conditions) 
+* Conditional programming
+    * [Simple Route conditionals](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/route_conditionals) 
+    * [Route Conditions](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/route_conditions) 
 
 ### Homework For Next Week
 
