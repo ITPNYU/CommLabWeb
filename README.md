@@ -33,7 +33,7 @@
 
 * Your Sinatra folder
 * Simple Sinatra script
-* [Simple HTML form example with POST to Sinatra route](https://gist.github.com/3557046) 
+* [Simple HTML form example in Sinatra](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week1/simple_form) 
 
 ### Homework For Next Week
 
