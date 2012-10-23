@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Form Example</title>
+    <style type="text/css">
+      body {
+        width: 30%;
+        background: white;
+      }
+      h1 {
+        color: #555;
+        background: white;
+        border-bottom: 1px solid #555;
+      }
+      p {
+        color: #121212;
+        font: normal 14px/16px Helvetica;
+      }
+      input[type="text"] {
+        padding: 5px;
+        font: normal 14px/16px Helvetica, sans-serif;
+        color: #555;
+      }
+    </style>
+  </head>
+ 
+  <body>
+      <h1>Simple form</h1>
+      <p>This is a simple form example.</p>
+      <form action="http://itp.nyu.edu/~irs221/sinatra/first_form/first_route" method="GET">
+        <p><label>What is your name?</label> <input type="text" name="yourname" /></p>
+        Milk <input type="checkbox" value="milk" name="check[]"/>
+        Sugar <input type="checkbox" value="sugar" name="check[]"/>
+        Flour <input type="checkbox" value="flour" name="check[]"/>
+        Cocoa <input type="checkbox" value="cocoa" name="check[]"/>
+        <input type="submit" value="Submit!" /></p>
+      </form>
+
+  </body>
+</html>

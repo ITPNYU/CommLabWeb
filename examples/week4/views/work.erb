@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Site with Views</title>
+    <link type="text/css" rel="stylesheet" href="/~irs221/sinatra/views/public/styles.css"/>
+    </style>
+  </head>
+  
+  <body>
+    <ul id="nav" class="menu">
+      <li><a href="/~irs221/sinatra/views/home">Home</a></li>
+      <li><a href="/~irs221/sinatra/views/about">About</a></li>
+      <li><a href="/~irs221/sinatra/views/details">Hours & Directions</a></li>
+      <li><a href="/~irs221/sinatra/views/work">Work</a></li>
+      <li><a href="/~irs221/sinatra/views/contact">Contact</a></li>
+    </ul>
+    
+    <br/><br/>
+    
+    <div id="main-canvas">
+      <h2><%= @title %></h2> 
+      <a href="/~irs221/sinatra/views/work/runnersproject">/~irs221/sinatra/views/work/runnersproject</a>
+      <a href="/~irs221/sinatra/views/work/sculptures">/~irs221/sinatra/views/work/sculptures</a>
+      <a href="/~irs221/sinatra/views/work/photos">/~irs221/sinatra/views/work/photos</a>
+      <a href="/~irs221/sinatra/views/work/covers">/~irs221/sinatra/views/work/covers</a>
+      <% if (params[:project] == "runnersproject") %>
+        <img src="http://www.ci.san-marcos.tx.us/departments/parks/Images/Runners.gif"/>
+      <% else %>
+        <h3><%= params[:project] %></h3>
+      <% end %>
+    </div>
+</html>

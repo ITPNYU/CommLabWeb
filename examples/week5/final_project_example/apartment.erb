@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apartments</title>
+    <link rel="stylesheet" type="text/css" href="/~irs221/sinatra/apt_listings/public/reset.css"></link>
+    <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/~irs221/sinatra/apt_listings/public/styles.css"></link>
+  </head>
+  
+  <body>
+    <div id="container">
+      <div id="header" class="ui-helper-clearfix">
+        <h1 class="parisienne header-text">Apartment Listings</h1>
+      </div>
+      
+      <div id="main" class="ui-helper-clearfix">
+        <ul id="nav" class="dropdown dropdown-horizontal ui-helper-clearfix">
+          <li><a href="/~irs221/sinatra/apt_listings/">Home</a></li>
+          <li><a href="/~irs221/sinatra/apt_listings/new_post">Post Listing</a></li>
+          <li><a href="/~irs221/sinatra/apt_listings/filter_big">Big Apts</a></li>
+          <li><a href="/~irs221/sinatra/apt_listings/filter_neighborhood">Filter by neighborhood</a></li>
+          <li><a href="/~irs221/sinatra/apt_listings/filter_pets">Pets allowed</a></li>
+        </ul>
+        
+        <div id="main-content" class="ui-helper-clearfix">
+          <h2 class="parisienne header-text heading"><%= @title %></h2>
+          <%= @details %>
+        </div>
+        
+        <div id="footer">
+          <p class="legal">Copyright @ Fake Apartment Listings Inc.</p>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

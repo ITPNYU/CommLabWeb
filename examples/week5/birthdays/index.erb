@@ -1,0 +1,9 @@
+<h1>Visitors</h1>
+
+<ul>
+<% for visitor in @visitors %>
+    <li><%= visitor.name %>, Created <%= visitor.created_at.strftime("%m/%d/%Y") %></li>
+<% end %>
+</ul>
+
+<a href="http://itp.nyu.edu/~rsm347/sinatra/datamapper_advanced/new">Create new visitor</a>

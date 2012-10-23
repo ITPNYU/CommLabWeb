@@ -1,0 +1,39 @@
+<h1>Welcome to my birthday registration page</h1>
+
+<h2>Register</h2>
+
+<form action="http://itp.nyu.edu/~rsm347/sinatra/datamapper_advanced/save" method="POST">
+
+    <p>Name</p>
+    <input type="text" name="name" />
+    
+    <p>Email</p>
+    <input type="text" name="email" />
+    
+    <p>Age</p>
+    <input type="text" name="age" />
+    
+    <input type="submit" value="Register for my birthday" />
+
+</form>
+
+<h2>Already registered friends</h2>
+
+<% for currentPerson in @people %>
+
+    <h3><%= currentPerson.name %></h3>
+    <p><%= currentPerson.email %></p>
+    <p><%= currentPerson.created_at.strftime("%m/%d/%y") %></p>
+    <a href="http://itp.nyu.edu/~rsm347/sinatra/datamapper_advanced/person/<%= currentPerson.id %>">Profile page</a>
+
+<% end %>
+
+
+
+
+
+
+
+
+
+
