@@ -13,7 +13,7 @@ end
 
 get '/form' do
   
-  #@title = "This is passing a variable"
+  @title = "This is passing a variable"
   erb :form 
   
 end
