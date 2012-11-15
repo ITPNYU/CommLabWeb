@@ -35,9 +35,33 @@
 * Simple Sinatra script
 * [Simple HTML form example in Sinatra](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week1/simple_form) 
 
-### Homework For Next Week
+### Assignment
 
-Open up the simple_form.html document on your server in Komodo and add more input fields (and input types). Chang thee app.rb file so it outputs the fields in a way that you like.
+#### Part 1
+You've got a great idea for the next big thing: it's called Etzy, and it's a place to sell artwork online.
+You want to drum up interest and get some visitor feedback, so you decide to create a signup form!
+
+For this assignment you must create a page where a visitor can input his or her name and email, and some preferences.
+We're not worried about doing anything with the form data right now, or even making it pretty. Just focus on getting the markup complete.
+
+##### Requirements
+The page should include the following:
+* a heading for the name of the business
+* a sentence describing what it does
+* a text input for a name
+* a text input for an email address
+* a checkbox for receiving an email newsletter
+* a dropdown menu for "How you heard about us" ("google", "from a friend", "online ad", etc.)
+* a radio button group for choosing a role ("buyer", "seller", or "both")
+
+##### Reference
+* Read [WHATWG: Forms](http://developers.whatwg.org/forms.html)
+* If you're stuck, look at this [basic form example](https://github.com/ckundo/CommLabWeb/blob/master/examples/basic_form.html) for guidance.
+
+#### Part 2
+We will also start looking at Ruby and Sinatra this week too, so we can start building a backend for our signup form. 
+* Complete levels 1 - 3 of the [Try Ruby](http://tryruby.org/levels/1/challenges/0) tutorial - *optional*
+* Read [Intro to Sinatra](https://docs.google.com/document/pub?id=1Qvi_Lh0geVa6P2LZlxFWi52yezLFnnZi9T5OEJpyidk) to “Hello Worlds: What is a route?"
 
 ## Week 2: Basics of a Sinatra script
 
@@ -78,9 +102,9 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
 ### Setting up a Sinatra app on the ITP server
 
 1. Open Terminal (Putty for Windows)
-2. run `ssh[netid](mailto:netid@stu.itp.nyu.edu) [@stu.itp.nyu.edu](mailto:netid@stu.itp.nyu.edu) `. Remember to put in your netid instead of “netid”
+2. run `ssh netid@stu.itp.nyu.edu`. Remember to put in your netid instead of “netid”
 3. Type in your password when prompted
-4. run `ruby new_sinatra_app.rbnameofapp`. Remember to replace “nameofapp” with the name of your application.
+4. run `ruby < <(curl -s http://runemadsen-2012.s3.amazonaws.com/new_sinatra_app.rb) - nameofapp`. Remember to replace “nameofapp” with the name of your application.
 5. Go to your blank Sinatra app here (using your netid and the name of your app):[http://itp.nyu.edu/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [~](http://itp.nyu.edu/~netID/sinatra/nameofapp) [netID](http://itp.nyu.edu/~netID/sinatra/nameofapp) [/sinatra/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [nameofapp](http://itp.nyu.edu/~netID/sinatra/nameofapp) 
 
 ### Homework For Next Week
