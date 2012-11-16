@@ -145,7 +145,7 @@ Create a new Sinatra application on the ITP Server. Create a GET “/form” rou
 
 ### Homework For Next Week
 
-Write a sinatra app that shows a user form, and on the POST request recognize whether the user is returning.
+Coming Soon!
 
 ## Week 4: Advanced Sinatra
 
