@@ -103,6 +103,16 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
 
 Create a new Sinatra application on the ITP Server. Create a GET “/form” route that returns an HTML form with a few different input types. Create a POST “/form” route that reads these parameters and sends back a dynamic HTML page. This HTML page should at least have an image that changes depending on the input from the form.
 
+
+###Putting images into your app directory.
+
+You need to make a folder called public. Inside of that make a folder called images and place your images there. Double click into your app folder. Right click and add new folder. Type public. Double click to go into the new public folder you created. Right click and add new folder called images. Put your images in there. You should put the full path to your file in the image src. It will look something like this: 
+`<img src="http://itp.nyu.edu/~YOURNETID/sinatra/YOURAPP/public/images/penguin.jpeg"/>`
+
+If your image does not appear there could be another issue with permissions. Right click on your public folder you just created and select info. Click on the permissions tab. Where it says unix permissions type 755 and click apply changes recursively. 
+
+
+
 ## Week 3: Basics of Datamapper
 
 ### Readings For This Week
@@ -121,12 +131,8 @@ Create a new Sinatra application on the ITP Server. Create a GET “/form” rou
 * Setup Datamapper
 * Write your Datamapper class
     * Properties: Serial, Boolean, String, Text, Float, Integer, Datetime,
-* [Create](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/create) 
-* [Read](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/read) 
-* [Update](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/update) 
-* [Delete](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/delete) 
-* [Find](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/find) 
-* [Example with everything](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/everything) 
+
+* [Datamapper Class Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week3/datamapperexample1)
 
 ### Using Datamapper with Forms
 
