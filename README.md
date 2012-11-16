@@ -126,6 +126,9 @@ Create a new Sinatra application on the ITP Server. Create a GET “/form” rou
 ### Datamapper
 
 * [Datamapper basics](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/basics)
+* [Datamapper find](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/find)
+* [Datamapper read](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/read)
+* [Datamapper update](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/update)
 
 ### Homework For Next Week
 
