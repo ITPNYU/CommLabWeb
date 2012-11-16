@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<title>Company Structure</title>
+	</head>
+	<body>
+
+		<% for employee in @employees %>
+			<p>First Name: <%= employee.fname %>, Last Name: <%= employee.lname %>, Position: <%= employee.position %></p>
+		<% end %>
+
+	</body>
+</html>

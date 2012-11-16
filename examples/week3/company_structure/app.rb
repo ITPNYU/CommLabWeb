@@ -14,28 +14,8 @@ end
 
 DataMapper.finalize
 
-# Main route  - this is the form where we take the input
-get '/' do
-  
-  # The "action" sets the url this form will go to
-  # The "method" sets the verb
-  #  
-  # The 'name' of the input translates into where the variable
-  # ends up in the params in our other action
-  # An input with name="fname" becomes params[:fname]
-  # An input with name="position" becomes params[:position]
-  # An input of type "submit" becomes a submit button for sending
-  # in the form 
-
-  <<-HTML
-<form action="http://itp.nyu.edu/~irs221/sinatra/company/create_employee" method="POST">
-   <p><label>First name:</label> <input type="text" name="fname" /></p>
-   <p><label>Last name:</label> <input type="text" name="lname" /></p>
-   <p><label>Position:</label> <input type="text" name="position" /></p>
-   <p><input type="submit" value="create" /></p>
-</form>
-HTML
- 
+get '/' do 
+  erb :form
 end
 
 post '/create_employee' do
@@ -50,18 +30,9 @@ post '/create_employee' do
   # Save the values we've just assigned
   employee.save
   
-  output = ""
+  @employees = Employee.all
   
-  # Loop through all our data and create HTML to display it
-  # We will store each data value in the variable e every time it loops
-  for e in Employee.all
-    output += <<-HTML
-      <p>First Name: #{e.fname}, Last Name: #{e.lname}, Position: #{e.position}</p>
-    HTML
-  end
-  
-  # Display the HTML
-  output
+  erb :create_employee
 end
 
 get '/engineers' do

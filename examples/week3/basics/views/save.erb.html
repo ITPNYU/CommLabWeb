@@ -1,0 +1,13 @@
+<html>
+    <head>
+	<title>This is a response</title>
+    </head>
+    <body>
+	<h2>All the people</h2>
+	
+	<% for currentPerson in @people %>
+	    <p>There's a guy named <%= currentPerson.firstname %></p>
+	<% end %>
+	
+    </body>
+</html>
