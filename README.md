@@ -85,16 +85,6 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
     * Gems
     
 * [Week 2 Class Examples](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week2/week2classexamples)
-* [Basic Sinatra App](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/basic_sinatra_app) 
-* [Routes](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/routes) 
-* [Returning something](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/returning_something)
-* [Returning something with views](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/views)
-* [Params](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/params) 
-    * GET request in URL params
-    * POST request
-    * Params in route
-* [First route gets picked up](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week2/first_route) 
-
 
 ### HTML Forms
 
