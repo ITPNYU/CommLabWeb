@@ -126,22 +126,6 @@ Create a new Sinatra application on the ITP Server. Create a GET “/form” rou
 ### Datamapper
 
 * [Datamapper basics](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/basics)
-* Setup Datamapper
-* Write your Datamapper class
-    * Properties: Serial, Boolean, String, Text, Float, Integer, Datetime,
-* [Create](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/create) 
-* [Read](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/read) 
-* [Update](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/update) 
-* [Delete](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/delete) 
-* [Find](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/find) 
-* [Example with everything](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/everything) 
-
-### Using Datamapper with Forms
-
-* Example of form + save
-* [Returning User Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/returning_user) 
-* [Advanced Returning User Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/advanced_returning_user) 
-* [Company Structure Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/company_structure) 
 
 ### Homework For Next Week
 
