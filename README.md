@@ -132,23 +132,23 @@ Create a new Sinatra application on the ITP Server. Create a GET “/form” rou
 
 ### Homework For Next Week
 
-For next week, you have to use datamapper to save the information from the form you built last week. This mean not only sending values from a form in a POST route, but also saving them to the database. The basic things that your homework should have:
+For next week, you will use datamapper to save the information from the form you built last week. These are the steps you need to create:
 
 * A GET route - this route returns a form for the user to fill out. You will need to:
-    * Create a get route
+    * Create the get route
     * Create a .erb file with the HTML for the form
-    * This form will need an action that points to your post route
-* A POST routes - this route saves the values from the form, and retrieves all saved values and inserts them in the HTML response. You will need to:
-    * Create a post route
+    * This form will need an action attribute that points to your post route
+* A POST route - this route saves the values from the form, retrieves all saved values, and inserts them in the HTML response. You will need to:
+    * Create the post route
     * Copy/paste the basic datamapper setup code
     * Create a datamapper class, with at least the basic setup and a property (besides the id)
-    * Create a new object from your class, and fill in the properties from the params array
+    * Create a new object from your class, and assign values from the params array
     * Call "save" on the object to save it to the database
     * Create a global variable and assign all objects from the database 
     * Create a .erb file with the HTML
-    * Loop through this global variable in the erb file, to output all values of the objects
+    * Loop through this global variable in the erb file, and output all values of the objects
 
-Again, all of this code is in the [example from the class](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/basics). But please try to understand the code, not just copy it.
+Again, all of this code is in the [example from the class](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week3/basics). You can use it for reference, but please write the assignment code yourself.
 
 
 ## Week 4: Advanced Sinatra
