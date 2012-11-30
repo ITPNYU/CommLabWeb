@@ -153,7 +153,7 @@ Sinatra Up and Running, p. 21-30
 
 ### Creating a Blog in Sinatra
 
-* [A full blog in Sinatra and Datamapper](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week4/full_blog) 
+* [A full blog in Sinatra and Datamapper](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/blog) 
 
 ### Advanced routes
 
