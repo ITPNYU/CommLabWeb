@@ -1,0 +1,10 @@
+
+
+<h1>Posts</h1>
+
+<% @posts.each do |thisPost| %>
+<p><%=thisPost.title%></p>
+<a href="http://itp.nyu.edu/~zr279/sinatra/blog/blog/<%=thisPost.id%>/edit">Edit</a>
+<a href="http://itp.nyu.edu/~zr279/sinatra/blog/blog/<%=thisPost.id%>/delete">Delete</a>
+
+<% end %>

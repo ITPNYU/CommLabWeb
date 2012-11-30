@@ -1,0 +1,5 @@
+<% for thisPost in @posts %>
+      <h1><%= thisPost.title %></h1>
+      <p><%= thisPost.body %></p>
+      <a href="http://itp.nyu.edu/~zr279/sinatra/blog/blog/<%=thisPost.id %>">Permalink</a>
+<% end %>
