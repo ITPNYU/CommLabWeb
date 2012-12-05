@@ -178,14 +178,14 @@ What do you want to do? What is preventing you from doing it?
 
 ### Advanced Datamapper
 
-* [Birthday Registration Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week5/birthdays) 
+* [Birthday Registration Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week5/advancesearch) 
 * More Datatypes
     * Serial
     * String
     * Boolean
     * Integer
     * DateTime
-    * [Example of all of these](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week5/datatypes) 
+    * [Example of all of these](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week5/advancedatamapper) 
 * Datatype options
     * Required
     * Default
