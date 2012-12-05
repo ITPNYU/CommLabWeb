@@ -1,0 +1,10 @@
+<p>
+<%for entry in @visitors%>
+      <p>Name: <%=entry.firstname%>, <%entry.lastname%></p>
+      <p>Loves cats -> <%=entry.catlover%></p>
+      <p>Has <%=entry.petno%> pets </p>
+      <p>When? <%=entry.time.strftime('%a %d %b %Y')%></p>
+      <p> ___________________ </p>
+    
+<%end%>    
+    </p>
