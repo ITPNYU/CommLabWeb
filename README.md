@@ -171,7 +171,18 @@ Sinatra Up and Running, p. 21-30
 
 ### Homework For Next Week
 
-* Create a mini-website with a menu and a couple of pages. All HTML has to exist in .erb views, and some of the actual data has to be retrieved and outputted from Datamapper.
+* Build a small web application that demonstrates the usage of:
+    * get and post routes
+    * .erb views 
+    * datamapper class
+    * saving data with datamapper
+    * retrieving data with datamapper (.all or .get)
+    * :colon in route
+* The application should have:
+    * A get route that shows all objects from DB
+    * a get route to show form
+    * a post route to save new object from form
+    * a permalink get route to show each object
 * Start planning your final project. Be prepared to talk about your idea next class.
 
 ## Week 5: Advanced Datamapper
@@ -216,6 +227,8 @@ What do you want to do? What is preventing you from doing it?
 ## Week 6: More Clients and Project Help
 
 ### Image Upload
+
+* [Image Upload Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week6/image_upload)
 
 ### Processing
 
