@@ -229,6 +229,7 @@ What do you want to do? What is preventing you from doing it?
 ### Image Upload
 
 * [Image Upload Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week6/image_upload)
+* [Image Upload From Processing Example](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week6/processing_image_upload)
 
 ### Processing
 
