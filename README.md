@@ -207,17 +207,19 @@ What do you want to do? What is preventing you from doing it?
 
 ## Week 6: More Clients and Project Help
 
-### Image Upload
+### [Image Upload](https://github.com/runemadsen/HTTProcessing)
 
 ### Processing
 
 * loadStrings to your app
-* Making calls from [HTTProcessing](https://github.com/runemadsen/HTTProcessing) 
+* Making calls from [HTTProcessing](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/imageupload) 
 * Other file formats (XML and JSON)
 
-* [Processing GET and Jsoup](https://github.com/runemadsen/HTTProcessing)
-* [Processing POST](https://github.com/runemadsen/HTTProcessing)
-* [Processing POST Image](https://github.com/runemadsen/HTTProcessing)
+* [Processing GET and Jsoup](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/httprocessingjsoupGet)
+* [Processing POST](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/httprocessingpost)
+* [Processing POST Image](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/httprocessingpostimage)
+* [Processing POST Sinatra App](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/processingExamples)
+
 
 ### Ruby
 
