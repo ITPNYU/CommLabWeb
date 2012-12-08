@@ -212,8 +212,12 @@ What do you want to do? What is preventing you from doing it?
 ### Processing
 
 * loadStrings to your app
-* Making calls from[HTTProcessing](https://github.com/runemadsen/HTTProcessing) 
+* Making calls from [HTTProcessing](https://github.com/runemadsen/HTTProcessing) 
 * Other file formats (XML and JSON)
+
+* [Processing GET and Jsoup](https://github.com/runemadsen/HTTProcessing)
+* [Processing POST](https://github.com/runemadsen/HTTProcessing)
+* [Processing POST Image](https://github.com/runemadsen/HTTProcessing)
 
 ### Ruby
 
