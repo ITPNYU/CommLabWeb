@@ -6,10 +6,11 @@ import httprocessing.*;
 void setup() {
 
   PostRequest post = new PostRequest("http://itp.nyu.edu/~zr279/sinatra/processingExamples/processingpost");
-  post.addData("name", "Zeven");
+  post.addData("name", "Jorge");
   post.send();
   println("Reponse Content: " + post.getContent());
   println("Reponse Content-Length Header: " + post.getHeader("Content-Length"));
+  
 }
 
 void draw() {

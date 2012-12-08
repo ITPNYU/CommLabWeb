@@ -7,8 +7,9 @@ void setup() {
 
   GetRequest get = new GetRequest("http://itp.nyu.edu/~zr279/sinatra/processingExamples/processingget");
   get.send();
- // println("Reponse Content: " + get.getContent());
- // println("Reponse Content-Length Header: " + get.getHeader("Content-Length"));
+  //println("Reponse Content: " + get.getContent());
+  //This gives the status message.
+  //println("Reponse Content-Length Header: " + get.getHeader("Status"));
 
 
   String html = get.getContent();
@@ -19,15 +20,17 @@ void setup() {
 
   
   //Shows the body text
-  String texts = doc.body().text();
+  //String texts = doc.body().text();
   //Shows the "a" select
   String nameText = name.text();
   String ageText = age.text();
 
   
-  println(texts);
+  //println(texts);
   println(nameText);
   println(ageText);
+
+ 
 
 
   
