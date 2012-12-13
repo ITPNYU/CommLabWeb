@@ -11,3 +11,6 @@
   
 * [Sergio Majluf Excuses Generator](http://itp.nyu.edu/~sam926/sinatra/excuseme/)
   * [Blog post](http://itp.nyu.edu/~sam926/the-excuses-generator/)
+
+* [Christina Carter Paint Your Face](http://itp.nyu.edu/~cvc261/sinatra/paintyourface)
+  * [Blog post](http://itp.nyu.edu/~cvc261/blog/?p=482)
