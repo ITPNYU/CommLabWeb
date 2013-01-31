@@ -79,6 +79,7 @@ You should also create a 3 page site with a Home (which can be your form) and 2 
 
 Most text adventures operate in the following: Your character enters a room and is able to investigate. Your investigations leads to consequences.
 [Click on the link for an example](http://itp.nyu.edu/~zr279/textadventure/adventure.html) 
+
 [Code](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/textadventure)
 
 ##### Reference
