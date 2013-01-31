@@ -94,9 +94,9 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
 ### Setting up a Sinatra app on the ITP server
 
 1. Open Terminal (Putty for Windows)
-2. run `ssh[netid](mailto:netid@stu.itp.nyu.edu) [@stu.itp.nyu.edu](mailto:netid@stu.itp.nyu.edu) `. Remember to put in your netid instead of “netid”
+2. run `ssh netid@stu.itp.nyu.edu`. Remember to put in your netid instead of “netid”
 3. Type in your password when prompted
-4. run `ruby < <(curl -s http://runemadsen-2012.s3.amazonaws.com/new_sinatra_app.rb) - nameofapp`. Remember to replace “nameofapp” with the name of your application.
+4. run `ruby /etc/new_sinatra_app.rb nameofapp`. Remember to replace “nameofapp” with the name of your application.
 5. Go to your blank Sinatra app here (using your netid and the name of your app):[http://itp.nyu.edu/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [~](http://itp.nyu.edu/~netID/sinatra/nameofapp) [netID](http://itp.nyu.edu/~netID/sinatra/nameofapp) [/sinatra/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [nameofapp](http://itp.nyu.edu/~netID/sinatra/nameofapp) 
 
 ### Homework For Next Week
