@@ -43,7 +43,7 @@ If you miss more then 1 assignment you will not pass!
 
 * Your Sinatra folder
 * Simple Sinatra script
-* [Simple HTML form example in Sinatra](https://github.com/ITPNYU/CommLabWeb/tree/master/examples/week1/simple_form) 
+* [Simple HTML form example in Sinatra](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week1/simple_form) 
 
 ### Assignment
 
