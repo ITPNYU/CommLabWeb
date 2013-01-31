@@ -78,7 +78,9 @@ You should also create a 3 page site with a Home (which can be your form) and 2 
 * Check boxes “What to carry:” (“Potions”, “Food”, “etc”)
 
 Most text adventures operate in the following: Your character enters a room and is able to investigate. Your investigations leads to consequences.
-[Click on the link for an example](http://itp.nyu.edu/~zr279/textadventure/adventure.html) [Code](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/textadventure)
+[Click on the link for an example](http://itp.nyu.edu/~zr279/textadventure/adventure.html) 
+[Code](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/textadventure)
+
 ##### Reference
 * Read [WHATWG: Forms](http://developers.whatwg.org/forms.html)
 * If you're stuck, look at this [basic form example](https://github.com/zevenwolf/CommLabWeb/blob/master/examples/basic_form.html) for guidance.
