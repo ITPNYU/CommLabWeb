@@ -33,6 +33,7 @@ If you miss more then 1 assignment you will not pass!
     * Tags that open and close
     * Mark up content
     * Nested tags
+    * [Basic Html Example](https://github.com/zevenwolf/CommLabWeb/blob/master/examples/basic_html.html)
 
 * Tags
     * `<html>, <title>, <body>, <em>, <strong>, <h1-h5>, <a>, <img>, <ol>, <ul>, <p>`
