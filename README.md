@@ -76,7 +76,7 @@ The page should include the following:
 
 ##### Reference
 * Read [WHATWG: Forms](http://developers.whatwg.org/forms.html)
-* If you're stuck, look at this [basic form example](https://github.com/ckundo/CommLabWeb/blob/master/examples/basic_form.html) for guidance.
+* If you're stuck, look at this [basic form example](https://github.com/zevenwolf/CommLabWeb/blob/master/examples/basic_form.html) for guidance.
 
 #### Part 2
 We will also start looking at Ruby and Sinatra this week too, so we can start building a backend for our signup form. 
