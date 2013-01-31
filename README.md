@@ -1,4 +1,6 @@
-# Comm Lab Web Syllabus Fall 2012
+# Comm Lab Web
+
+The goal of Comm Lab Web is to develop creative web applications. 
 
 #Posting your HW
 
