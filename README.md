@@ -48,6 +48,8 @@ If you miss more then 1 assignment you will not pass!
 ### Assignment
 
 #### Part 1
+
+##### Option 1: Etzy App
 You've got a great idea for the next big thing: it's called Etzy, and it's a place to sell artwork online.
 You want to drum up interest and get some visitor feedback, so you decide to create a signup form!
 
@@ -63,6 +65,14 @@ The page should include the following:
 * a checkbox for receiving an email newsletter
 * a dropdown menu for "How you heard about us" ("google", "from a friend", "online ad", etc.)
 * a radio button group for choosing a role ("buyer", "seller", or "both")
+
+##### Option 2: Making your own text adventure! Create your character form:
+* Name
+* Small back story
+* Dropdown menu for "Weapon choice" (“Sword”, “Ax”, “Wand”)
+* A radio button group for choosing a role ("Male", "Female", or "Ambiguous")
+* Check boxes “What to carry:” (“Potions”, “Food”, “etc”)
+
 
 ##### Reference
 * Read [WHATWG: Forms](http://developers.whatwg.org/forms.html)
