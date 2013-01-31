@@ -67,14 +67,18 @@ The page should include the following:
 * a dropdown menu for "How you heard about us" ("google", "from a friend", "online ad", etc.)
 * a radio button group for choosing a role ("buyer", "seller", or "both")
 
-##### Option 2: Making your own text adventure! Create your character form:
+You should also create a 3 page site with a Home (which can be your form) and 2 other links with text and image
+
+
+##### Option 2: Making your own text Game! Create your character form:
 * Name
 * Small back story
 * Dropdown menu for "Weapon choice" (“Sword”, “Ax”, “Wand”)
 * A radio button group for choosing a role ("Male", "Female", or "Ambiguous")
 * Check boxes “What to carry:” (“Potions”, “Food”, “etc”)
 
-
+Most text adventures operate in the following: Your character enters a room and is able to investigate. Your investigations leads to consequences.
+[Click on the link for an example](http://itp.nyu.edu/~zr279/textadventure/adventure.html) [Code](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/textadventure)
 ##### Reference
 * Read [WHATWG: Forms](http://developers.whatwg.org/forms.html)
 * If you're stuck, look at this [basic form example](https://github.com/zevenwolf/CommLabWeb/blob/master/examples/basic_form.html) for guidance.
