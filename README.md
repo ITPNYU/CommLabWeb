@@ -119,6 +119,16 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
 * Render HTML with Sinatra
 * Send to route in Sinatra
 
+### Intro to Sinatra
+
+Sinatra works by declaring routes. Routes are the URLs associated with your application. A simple route looks like this:
+
+get '/home' do 
+
+end 
+
+
+
 ### Setting up a Sinatra app on the ITP server
 
 1. Open Terminal (Putty for Windows)
