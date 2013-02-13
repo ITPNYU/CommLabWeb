@@ -119,13 +119,68 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
 * Render HTML with Sinatra
 * Send to route in Sinatra
 
+The components of a for have 2 parts, the form tag and the body
+
+<form action="/form" method="POST">
+
+    <input type="text" name="name" ></input>
+
+</form>   
+
+* Form Tag
+    * Action - Route where the form data will be processed
+    * Method - Which Http request protocol to use
+    
+* Body - Form inputs
+    * type - The method of input
+    * name - The reference for the value
+    * value - The user input selection or text
+
+
 ### Intro to Sinatra
 
 Sinatra works by declaring routes. Routes are the URLs associated with your application. A simple route looks like this:
 
-get '/home' do 
+    get '/home' do 
+        "Code goes in here"
+    end 
 
-end 
+Think of routes as litte programs that are going to run when you you visit the link. The route is composed of 2 imporant parts the method and the link.
+
+Methods include: GET, POST, DELETE, PUT, etc. After the method you declare the link. In class, we mostly use GET and POST. 
+
+GET - Requests data from a specified resource
+POST - Submits data to be processed to a specified resource
+
+GET requests can be used in routes that:
+    * Serve up content
+    * Process form
+        * Form data public
+        * The form data is sent in the URL in name and value pairs
+
+POST requests can be used in routes that:
+    * Process form
+        * Form data private
+        * Information is sent in the HTTP message body
+
+
+For more differences visit [click here](http://www.w3schools.com/tags/ref_httpmethods.asp).
+
+What about the form data?
+
+Sinatra uses a global variable called parameters. The syntax for parameters is params[:name]. The :name is the reference name pulled from the form. Parameters can also be pulled from a url route. When used in a route /home/:name , this can be referenced by params[:name]
+
+This is an example for taking in a value from a form:
+
+    post '/home' do 
+        name = params[:name]
+    end 
+
+This is an example for taking in a value from a url
+
+    get '/home/:name' do 
+        name = params[:name]
+    end 
 
 
 
