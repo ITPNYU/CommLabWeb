@@ -104,6 +104,16 @@ Sinatra Up and Running, p. 15-21 (It’s not much, so please read it thoroughly)
 
 ### [Sinatra](http://goo.gl/ZLGyk) 
 
+
+### Setting up a Sinatra app on the ITP server
+
+1. Open Terminal (Putty for Windows)
+2. run `ssh netid@stu.itp.nyu.edu`. Remember to put in your netid instead of “netid”
+3. Type in your password when prompted
+4. run `ruby /etc/new_sinatra_app.rb nameofapp`. Remember to replace “nameofapp” with the name of your application.
+5. Go to your blank Sinatra app here (using your netid and the name of your app):[http://itp.nyu.edu/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [~](http://itp.nyu.edu/~netID/sinatra/nameofapp) [netID](http://itp.nyu.edu/~netID/sinatra/nameofapp) [/sinatra/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [nameofapp](http://itp.nyu.edu/~netID/sinatra/nameofapp) 
+
+
 * Ruby
     * General (no types, etc)
     * Syntax
@@ -182,15 +192,58 @@ This is an example for taking in a value from a url
         name = params[:name]
     end 
 
+When we want to output variables from sinatra from our route:
+
+    post '/home' do 
+        
+        name = params[:name]
+        "This is my name #{name}"
+
+    end 
+
+When we want to output variables from sinatra to our erb:
+
+The @ symbol is use to signify that the variable can be accessed from the erb template 
+
+app.rb
+
+    post '/home' do 
+        
+        @name = params[:name]
+
+        erb :name
+
+    end 
+
+name.erb
+    
+    <p><%=@name%></p>   
 
 
-### Setting up a Sinatra app on the ITP server
+You can run ruby code in your erb.
 
-1. Open Terminal (Putty for Windows)
-2. run `ssh netid@stu.itp.nyu.edu`. Remember to put in your netid instead of “netid”
-3. Type in your password when prompted
-4. run `ruby /etc/new_sinatra_app.rb nameofapp`. Remember to replace “nameofapp” with the name of your application.
-5. Go to your blank Sinatra app here (using your netid and the name of your app):[http://itp.nyu.edu/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [~](http://itp.nyu.edu/~netID/sinatra/nameofapp) [netID](http://itp.nyu.edu/~netID/sinatra/nameofapp) [/sinatra/](http://itp.nyu.edu/~netID/sinatra/nameofapp) [nameofapp](http://itp.nyu.edu/~netID/sinatra/nameofapp) 
+name.erb
+    <% name = "zeven" %>
+    <p>My name is <%=name%></p>   
+
+
+This will output the HTML code:
+
+    <p>My name is zeven</p> 
+
+The <%  %> escape characters are used to write ruby code:
+
+    <% name = "zeven" %>
+
+This will not output anything in your template
+
+To output variables to your template:
+
+The sinatra reads the = sign and understands to render the variable
+
+    <%=variable%>
+
+
 
 ### Homework For Next Week
 

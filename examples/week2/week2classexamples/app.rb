@@ -1,61 +1,110 @@
 require 'sinatra'
 
 # Main route  - this is the form is shown
-get '/' do 
-  "Hello"
+get '/' do
+  erb :form
 end
 
-get '/html' do
+get '/character' do
   
- "This is an example of simple routes. Check out the <a href='/~zr279/sinatra/example1/'>Home</a> </br> <p>Done</p>"
-
+  erb :characterform
 end
 
-get '/form' do
+post '/name' do
   
-  @title = "This is passing a variable"
-  erb :form 
-  
-end
-
-
-post '/form' do
-  
-  var = params[:yourname]
-  "This is my name #{var}"
-  ##"This is my name" + params[:yourname]
-
-end
-
-get '/urlparams' do
-  
-  
-  id = params[:id]
-  name = params[:name]
-  
-  "This is the id: #{id} name: #{name}"
-
+  name = params[:character]
+  #name is the ruby variable I am inputing 
+  #if I want to display from my sinatra file
+  "Hello #{name}"
   
 end
 
-get '/name/:id' do
+get '/apple/:type' do
+  #when bring a variable from app.rb to an erb use @variable sign. In your erb use this syntax <%=@variable%>
+  @category = params[:type]
   
-  "This is the id #{params[:id]}"
+  erb :category
+end
+
+get '/yesno' do
+  
+  erb :yesno
+end
+
+post '/yesno' do
+  
+  response = params[:question]
+  
+  if response == "yes"
+    #"The response was yes"
+    erb :adventure
+  elsif response == "no"
+    "The response was no"
+  else
+    "Something didnt happen correctly"
+  end
   
 end
 
-get '/name' do
+get '/check' do
   
-  "Name"
+  erb :check
+end
+
+post '/check' do
+  #When a checkbox is not selected no param is sent.
+  checkbox1 = params[:check1]
+  checkbox2 = params[:check2]
+  checkbox3 = params[:check3]
+
+
+  
+  if checkbox1 == "1"
+    "We love ruby/sinatra"
+  else
+    "We hate ruby/sinatra"
+  end
   
 end
 
 
 
-get '/same_route' do
-  "Same route #1"
+
+
+
+
+
+
+
+
+
+
+get '/adventure' do
+  erb :adventure
 end
 
-get '/same_route' do
-  "Same route #2"
+get '/left' do
+  
+  erb :left
+end
+
+get '/pull' do
+  
+  erb :pull
+end
+
+get '/right' do
+  
+  erb :right
+end
+
+
+
+
+
+# Second route  - this is the form is posted to
+get '/hello' do
+  # params[:yourname] will be replaced with the value entered for 
+  # the input with name 'yourname'  
+  "Hello " + params[:yourname]
 end
