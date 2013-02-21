@@ -61,8 +61,10 @@ post '/check' do
   
   if checkbox1 == "1"
     "We love ruby/sinatra"
+  elsif checkbox1.nil?
+    "We do not love ruby/sinatra"
   else
-    "We hate ruby/sinatra"
+    "not working"
   end
   
 end
