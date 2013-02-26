@@ -1,89 +1,84 @@
 require 'sinatra'
 require 'dm-core'
 
-DataMapper::setup(:default, {:adapter => 'yaml', :path => 'db'})
+#Setting up what kind of database and what directory to save it
+#yaml is a simple database that saves in a text file you can read
+DataMapper::setup(:default, {:adapter =>'yaml', :path => 'db'})
 
 class BlogPost
-  include DataMapper::Resource
-  property :id, Serial
+  include DataMapper::Resource #This line makes sure Datamapper uses this class to build our database structure
+  
+  property :id, Serial #We always need a Serial property. This ensures every new data entry has a unique number attributed with it.
   property :title, String
   property :body, Text
 end
 
-DataMapper.finalize
-
-get "/" do
-  @nav = "Splash page"
-  erb :front
-end
-
-get "/blog" do
-  @nav = "Zeven's Blog"
-  @posts = BlogPost.all
-  erb :blog
-end
-
-get "/blog/new" do
-  erb :blog_new
-end
-
-post "/blog/save" do
-  myPost = BlogPost.new
-  myPost.title = params[:title]
-  myPost.body = params[:body]
+get '/' do
   
-  if(myPost.save)
-    @message = "Your post was saved!"
-  else
-    @message = "Your post was NOT SAVED!!!!!!!"
-  end
+  #Asking for all entries in the database
   
-  erb :blog_save
+  @allEntries = BlogPost.all
+  
+  #Look at home.erb to see how to loop through an array
+  erb :home
+  
 end
 
-get "/blog/admin" do
-  @nav = "Admin"
-  @posts = BlogPost.all
-  erb :admin
+get '/:id' do
+  
+  #Asking for entry based on the Serial number
+  @entry = BlogPost.get(params[:id])
+  erb :singleEntry
 end
 
-get "/blog/:id/edit" do
-  @nav = "You are on the edit username page"
-  @updatePost = BlogPost.get(params[:id])
+get '/:id/edit' do
+  
   @id = params[:id]
-  erb :edit 
+  
+  erb :singleEdit
 end
 
-post "/blog/:id/edit" do
-  updatePost = BlogPost.get(params[:id])
-  updatePost.title = params[:title]
-  updatePost.body = params[:body]
+post '/:id/edit' do
   
-  if(updatePost.save)
-    redirect to("http://itp.nyu.edu/~zr279/sinatra/blog/blog")
+  #Edit a new entry. @entryEdit is the current instance of BlogPost based on a query or search by the ID
+  @entryEdit = BlogPost.get(params[:id])
+  
+  title = params[:title]
+  body = params[:body]
+  
+  @entryEdit.title = title
+  @entryEdit.body = body
+  
+  if (@entryEdit.save)
+    redirect to("http://itp.nyu.edu/~zr279/sinatra/blogs/")
   else
-    "Your post was NOT SAVED!!!!!!!"
+    "It did not save"
   end
   
+end
+
+get '/entry' do
+  
+  erb :entry
+end
+
+post '/entry' do
+  #Create a new entry. myEntry is the current instance of BlogPost
+  myEntry = BlogPost.new
+  #Add data from the form to new entry
+  myEntry.title = params[:title]
+  myEntry.body = params[:body]
+  #Save to the Database. If it fails it will repond with "You entry was not saved!!!!!!!!!!!!"
+  if(myEntry.save)
+    "Your entry was saved!"
+  else
+    "You entry was not saved!!!!!!!!!!!!"
+  end
   
 end
 
-get "/blog/:id/delete" do
-  
-  deletePost = BlogPost.get(params[:id])
-  
-  
-  deletePost.destroy
-  
-  redirect to("http://itp.nyu.edu/~zr279/sinatra/blog/blog/admin")
- 
-  
-end
-  
-get "/blog/:id" do
-  @post = BlogPost.get(params[:id])
-  erb :post, :layout => false
-end
+
+
 
 
 

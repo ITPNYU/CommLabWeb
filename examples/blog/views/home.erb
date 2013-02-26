@@ -1,0 +1,10 @@
+<%@allEntries.each do |content|%>
+
+<h1><%=content.title%></h1>
+</br>
+<%=content.body%>
+</br>
+
+<a href="http://itp.nyu.edu/~zr279/sinatra/blogs/<%=content.id%>">This is a link to entry #<%=content.id%></a>
+
+<%end%>

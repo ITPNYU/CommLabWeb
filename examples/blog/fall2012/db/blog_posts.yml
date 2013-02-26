@@ -1,0 +1,13 @@
+--- 
+- title: this is no longer a test
+  body: this is no longer a test
+  id: 2
+- title: Hello this my first post
+  body: Hello i love sintar
+  id: 4
+- title: this is a post
+  body: this is a post
+  id: 3
+- title: this is another post
+  body: this is another post
+  id: 4

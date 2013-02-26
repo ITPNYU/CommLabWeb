@@ -278,6 +278,62 @@ If your image does not appear there could be another issue with permissions. Rig
 * Write your Datamapper class
     * Properties: Serial, Boolean, String, Text, Float, Integer, Datetime,
 
+### Setting up the Database
+
+First you need to add the library:
+
+require 'dm-core'
+
+Second add the basic database setup:
+
+DataMapper::setup(:default, {:adapter =>'yaml', :path => 'db'})
+
+We are using a yaml database saved to the path db
+
+
+### Setting up the Database Class
+
+The Class is what Datamapper uses to create the database model
+
+class BlogPost
+
+  include DataMapper::Resource #This line makes sure Datamapper uses this class to build our database structure
+  
+  property :id, Serial #We always need a Serial property. This ensures every new data entry has a unique number attributed with it.
+  property :title, String
+  property :body, Text
+
+end
+
+### Acessing the Data
+
+  Asking for entry based on the Serial property. This returns a single entry
+
+  @entry = BlogPost.get(params[:id])
+
+  To access the data you use the instance name @entry followed by a . and the name of the property you want to access i.e. @entry.title, will return the title of your current query
+
+  Asking for all entries in the database. This returns an array of objects
+
+  @allEntries = BlogPost.all
+
+  To display the data in your erb you need to loop through an array:
+
+    <%@allEntries.each do |content|%>
+        <%=content.id%>
+        </br>
+        <%=content.title%>
+        </br>
+        <%=content.body%>
+        </br>
+    <%end%>
+
+
+
+
+
+
+
 * [Datamapper Class Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week3/datamapperexample1)
 
 ### Using Datamapper with Forms
