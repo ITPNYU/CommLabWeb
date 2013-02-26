@@ -329,11 +329,6 @@ end
     <%end%>
 
 
-
-
-
-
-
 * [Datamapper Class Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week3/datamapperexample1)
 
 ### Using Datamapper with Forms
