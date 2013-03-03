@@ -1,0 +1,25 @@
+
+      <form action="http://itp.nyu.edu/~zr279/sinatra/week5spring13/newvisitor" method="POST">
+        <p><label>Please enter your name:</label> <input type="text" name="yourname" /></p>
+        <select name="catlover">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+        
+        <p><label>How many pets do you have</label> <input type="text" name="petno" /></p>
+
+        <input type="submit" value="Submit!" /></p>
+      </form>
+      
+     <p> First visitor: <%=@first.firstname%> </p>
+     <p> Last visitor: <%=@last.firstname%> </p>
+     
+     <%@petnumber.each do |pets|%>
+     <p><%=pets.firstname%> has <%=pets.petno%> pets. This is the time they enter: <%=pets.time.strftime('%B' '%d' '%Y')%></p>
+     
+     
+     
+     
+     <%end%>
+
+

@@ -329,7 +329,46 @@ end
     <%end%>
 
 
-* [Datamapper Class Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week3/datamapperexample1)
+* [Datamapper Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week3/datamapperexample1)
+
+Here are some more Datamapper Query types:
+
+  Get a user by id
+  #user = Visitor.get(1)
+
+  Get first user with name "rune"
+  #users = Visitor.first(:username => "rune")
+
+  Get last user with name "rune"
+  #user = Visitor.last(:name => "rune")
+
+  Get all users with name "rune"
+  #user = Visitor.all(:name => "rune")
+
+  Find all users with age between 18 and 60
+  #user = Visitor.all(:age.gt => 18, :age.lt => 60)
+
+  # You can use all of these conditions
+  # gt, greater than
+  # lt, less than
+  # gte, greater than or equal   
+  # lte, less than or equal
+  # not, not equal
+  # eql, equal
+  # like, like
+
+  Order visitors by age (you also use .asc)
+  #user = Visitor.all(:order => [ :age.desc ])
+
+  Find the number of visitors in your database with age greater than 18
+  #count = Visitor.count(:age.gt => 18)
+
+  Find the youngest age in the database
+  #min_age = Visitor.min(:age)
+
+  Find the oldest age in the database
+  #max_age = Visitor.max(:age)
+
 
 ### Using Datamapper with Forms
 
@@ -375,25 +414,22 @@ What do you want to do? What is preventing you from doing it?
 
 ### Advanced Datamapper
 
-* [Birthday Registration Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week5/advancesearch) 
 * More Datatypes
-    * Serial
-    * String
-    * Boolean
-    * Integer
-    * DateTime
-    * [Example of all of these](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week5/advancedatamapper) 
+    * Serial - is your unique identifier
+    * String - use when you want to save text
+    * Boolean - true and false
+    * Integer - numbers
+    * DateTime - To save a Time object
+     
+
 * Datatype options
-    * Required
-    * Default
-    * Length
-* Finding Records
-    * first
-    * all
-    * first_or_new
-    * Conditions (gt, lt, gte, lte, not, eql, like)
-    * Ordering (desc, asc)
-    * Counting
+    * Required - property :firstname, String, :required => true
+    * Default - property :catlover, Boolean, :default => false
+    * Length - property :content, Text, :length => 0..500
+
+[Birthday Registration Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week5/advancesearch)
+
+[Example of all of these](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week5/advancedatamapper)
 
 ### Some hints about CSS
 
