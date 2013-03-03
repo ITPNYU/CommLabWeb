@@ -414,6 +414,9 @@ What do you want to do? What is preventing you from doing it?
 
 ### Advanced Datamapper
 
+[Class Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week5/week5spring13)
+
+
 * More Datatypes
     * Serial - is your unique identifier
     * String - use when you want to save text
