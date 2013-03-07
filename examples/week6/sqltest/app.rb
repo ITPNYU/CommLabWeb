@@ -5,9 +5,9 @@ require 'dm-migrations'
 DataMapper.setup(:default, {
  :adapter => 'mysql',
  :host => 'localhost',
- :username => 'zr279' ,
- :password => '',
- :database => 'zr279'})
+ :username => 'netid' ,
+ :password => 'Enteryour password here from sqlpw',
+ :database => 'netid'})
 
 class Test
   include DataMapper::Resource
