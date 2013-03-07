@@ -1,0 +1,14 @@
+@parseJson["Visitors"] gives you: <%=@parseJson["Visitors"]%>
+</br>
+@parseJson["Visitors"][0].keys gives you: <%=@parseJson["Visitors"][0].keys%>
+</br>
+@parseJson["Visitors"][0].keys[0] gives you: <%=@parseJson["Visitors"][0].keys[0]%>
+</br>
+
+<%@parseJson["Visitors"].each do |output|%>
+
+<p>The persons name: <%=output["name"]%> and age: <%=output["age"]%></p>
+
+
+<%end%>
+
