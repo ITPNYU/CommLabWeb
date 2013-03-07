@@ -457,6 +457,18 @@ What do you want to do? What is preventing you from doing it?
 * [Processing POST Sinatra App](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/processingExamples)
 
 
+###ProcessingJS
+* [ProcessingJS POST](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/processingjspost)
+
+###JSON
+* [JSON Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/jsonexample)
+
+###MYSQL
+* [MYSQL Example](https://github.com/zevenwolf/CommLabWeb/tree/master/examples/week6/sqltest)
+
+
+
+
 ### Ruby
 
 Calling your site with a Ruby script on your machine
